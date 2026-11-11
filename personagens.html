@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Catálogo de princesas, heróis e personagens de desenho para festas.">
+    <title>Personagens | Império dos Personagens</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="pular-link" href="#conteudo">Pular para o conteúdo</a>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-imperio" data-bs-theme="dark" aria-label="Menu principal">
+            <div class="container">
+                <a class="navbar-brand marca" href="index.html">
+                    <img src="img/logo.png" alt="" width="56" height="56">
+                    Império dos Personagens
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu-principal">
+                    <ul class="navbar-nav ms-auto align-items-xl-center">
+                        <li class="nav-item"><a class="nav-link link-menu" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link link-menu" href="sobre.html">Sobre nós</a></li>
+                        <li class="nav-item"><a class="nav-link link-menu" href="personagens.html">Personagens</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link link-menu dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Serviços</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item link-submenu" href="animacao-de-festas.html">Animação de festas</a></li>
+                                <li><a class="dropdown-item link-submenu" href="danca-com-os-personagens.html">Dança com os personagens</a></li>
+                                <li><a class="dropdown-item link-submenu" href="hora-da-leitura.html">Hora da leitura</a></li>
+                                <li><a class="dropdown-item link-submenu" href="brincadeiras.html">Brincadeiras</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link link-menu" href="galeria.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link link-menu" href="pacotes.html">Pacotes</a></li>
+                        <li class="nav-item"><a class="nav-link link-menu" href="contato.html">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link link-menu" href="https://www.instagram.com/imperiodospersonagens" target="_blank" rel="noopener">Instagram</a></li>
+                        <li class="nav-item ms-xl-2 mt-2 mt-xl-0"><a class="btn btn-real" href="https://api.whatsapp.com/send/?phone=5541984980870&amp;text=Ol%C3%A1%2C%20vim%20pelo%20site%21" target="_blank" rel="noopener">Orçar no WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="conteudo">
+        <section class="pagina-topo">
+            <div class="container">
+                <h1>Personagens</h1>
+                <p>Escolha uma categoria ou busque pelo nome para encontrar o personagem da sua festa.</p>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="container">
+                <div class="filtros" role="group" aria-label="Filtrar personagens por categoria">
+                    <button type="button" class="btn btn-outline-primary rounded-pill filtro active" data-categoria="todos" aria-pressed="true">Todos</button>
+                    <button type="button" class="btn btn-outline-primary rounded-pill filtro" data-categoria="princesas" aria-pressed="false">Princesas</button>
+                    <button type="button" class="btn btn-outline-primary rounded-pill filtro" data-categoria="herois" aria-pressed="false">Heróis</button>
+                    <button type="button" class="btn btn-outline-primary rounded-pill filtro" data-categoria="desenhos" aria-pressed="false">Desenhos</button>
+                    <div class="ms-md-auto">
+                        <label class="visually-hidden" for="busca-personagem">Buscar personagem pelo nome</label>
+                        <input class="form-control rounded-pill" type="search" id="busca-personagem" placeholder="Buscar pelo nome">
+                    </div>
+                </div>
+                <p id="contador-personagens" aria-live="polite"></p>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4" id="grade-personagens"></div>
+                <noscript>
+                    <p class="mensagem-vazia">Ative o JavaScript do navegador para ver o catálogo de personagens.</p>
+                </noscript>
+            </div>
+        </section>
+
+        <section class="faixa-cta">
+            <div class="container">
+                <div>
+                    <h2>Não achou o personagem?</h2>
+                    <p>Temos outros figurinos além do catálogo. Pergunte pelo seu tema.</p>
+                </div>
+                <a class="btn btn-lg btn-real" href="contato.html">Falar com a gente</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container-puro rodape-grade">
+            <section>
+                <a class="marca" href="index.html">
+                    <img src="img/logo.png" alt="" width="56" height="56">
+                    Império dos Personagens
+                </a>
+                <p>Personagens vivos para festas infantis, escolares e corporativas em Curitiba e região metropolitana.</p>
+            </section>
+            <nav aria-label="Links do rodapé">
+                <h2>Navegação</h2>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre nós</a></li>
+                    <li><a href="personagens.html">Personagens</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="pacotes.html">Pacotes</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <section>
+                <h2>Contato</h2>
+                <address>
+                    <ul>
+                        <li>Curitiba - PR</li>
+                        <li><a href="mailto:contato@imperiodospersonagens.com.br">contato@imperiodospersonagens.com.br</a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=5541984980870&amp;text=Ol%C3%A1%2C%20vim%20pelo%20site%21" target="_blank" rel="noopener">(41) 9 8468-4930</a></li>
+                        <li>Seg a dom, das 10h às 19h</li>
+                    </ul>
+                </address>
+                <ul class="redes">
+                    <li><a href="https://www.facebook.com/profile.php?id=61561516843512" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/imperiodospersonagens" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="https://www.tiktok.com/@imperiodospersonagens" target="_blank" rel="noopener">TikTok</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="container-puro rodape-base">
+            <p>&copy; <span id="ano">2026</span> Império dos Personagens. Projeto acadêmico de Desenvolvimento Front-end para Web, Universidade Positivo.</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/personagens.js"></script>
+</body>
+</html>

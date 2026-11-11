@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Fotos de festas e eventos animados pela Império dos Personagens.">
+    <title>Galeria | Império dos Personagens</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="pular-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="cabecalho-puro">
+        <nav class="container-puro" aria-label="Menu principal">
+            <a class="marca" href="index.html">
+                <img src="img/logo.png" alt="" width="56" height="56">
+                Império dos Personagens
+            </a>
+            <button class="menu-botao" id="menu-botao" type="button" aria-controls="menu-puro" aria-expanded="false" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="menu-puro" id="menu-puro">
+                <li><a class="link-menu" href="index.html">Início</a></li>
+                <li><a class="link-menu" href="sobre.html">Sobre nós</a></li>
+                <li><a class="link-menu" href="personagens.html">Personagens</a></li>
+                <li class="tem-submenu">
+                    <a class="link-menu" href="animacao-de-festas.html">Serviços</a>
+                    <ul class="submenu">
+                        <li><a class="link-submenu" href="animacao-de-festas.html">Animação de festas</a></li>
+                        <li><a class="link-submenu" href="danca-com-os-personagens.html">Dança com os personagens</a></li>
+                        <li><a class="link-submenu" href="hora-da-leitura.html">Hora da leitura</a></li>
+                        <li><a class="link-submenu" href="brincadeiras.html">Brincadeiras</a></li>
+                    </ul>
+                </li>
+                <li><a class="link-menu" href="galeria.html">Galeria</a></li>
+                <li><a class="link-menu" href="pacotes.html">Pacotes</a></li>
+                <li><a class="link-menu" href="contato.html">Contato</a></li>
+                <li><a class="link-menu" href="https://www.instagram.com/imperiodospersonagens" target="_blank" rel="noopener">Instagram</a></li>
+                <li><a class="botao" href="https://api.whatsapp.com/send/?phone=5541984980870&amp;text=Ol%C3%A1%2C%20vim%20pelo%20site%21" target="_blank" rel="noopener">Orçar no WhatsApp</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo">
+        <section class="pagina-topo">
+            <div class="container-puro">
+                <h1>Galeria</h1>
+                <p>Momentos de festas, escolas e eventos animados pela equipe. Clique em uma foto para ampliar.</p>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="container-puro">
+                <div class="galeria">
+                    <figure class="galeria-item galeria-destaque" tabindex="0">
+                        <img src="img/galeria-recepcao.jpg" alt="Pequena Sereia reunida com as crianças e as famílias na recepção da festa" width="720" height="1598" style="object-position: center 30%;">
+                        <figcaption>Recepção dos convidados</figcaption>
+                    </figure>
+                    <figure class="galeria-item" tabindex="0">
+                        <img src="img/galeria-parabens-princesas.jpg" alt="Bella e Cinderela ao lado da aniversariante na hora do parabéns" width="1000" height="1289" style="object-position: center 20%;">
+                        <figcaption>Parabéns com as princesas</figcaption>
+                    </figure>
+                    <figure class="galeria-item" tabindex="0">
+                        <img src="img/galeria-treino-guerreiras.jpg" alt="Personagem conduzindo o treino das guerreiras com a turma de crianças" width="814" height="1430">
+                        <figcaption>Treino das guerreiras</figcaption>
+                    </figure>
+                    <figure class="galeria-item" tabindex="0">
+                        <img src="img/galeria-danca.jpg" alt="Personagem dançando de mãos dadas com uma convidada" width="889" height="1546">
+                        <figcaption>Dança com o personagem</figcaption>
+                    </figure>
+                    <figure class="galeria-item" tabindex="0">
+                        <img src="img/galeria-hora-da-leitura.jpg" alt="Homem-Aranha lendo um livro com um menino no banco do jardim" width="960" height="1280">
+                        <figcaption>Hora da leitura</figcaption>
+                    </figure>
+                    <figure class="galeria-item" tabindex="0">
+                        <img src="img/galeria-brincadeiras.jpg" alt="Homem-Aranha brincando com as crianças na piscina de bolinhas" width="870" height="1600" style="object-position: center 40%;">
+                        <figcaption>Brincadeiras</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <div id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+            <button class="lightbox-botao lightbox-fechar" id="lightbox-fechar" type="button" aria-label="Fechar foto">&times;</button>
+            <button class="lightbox-botao lightbox-anterior" id="lightbox-anterior" type="button" aria-label="Foto anterior">&#8249;</button>
+            <img id="lightbox-imagem" src="img/galeria-recepcao.jpg" alt="">
+            <p id="lightbox-legenda"></p>
+            <button class="lightbox-botao lightbox-proxima" id="lightbox-proxima" type="button" aria-label="Próxima foto">&#8250;</button>
+        </div>
+
+        <section class="faixa-cta">
+            <div class="container-puro">
+                <div>
+                    <h2>Gostou do que viu?</h2>
+                    <p>A próxima galeria pode ser da sua festa.</p>
+                </div>
+                <a class="botao" href="contato.html">Pedir orçamento</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container-puro rodape-grade">
+            <section>
+                <a class="marca" href="index.html">
+                    <img src="img/logo.png" alt="" width="56" height="56">
+                    Império dos Personagens
+                </a>
+                <p>Personagens vivos para festas infantis, escolares e corporativas em Curitiba e região metropolitana.</p>
+            </section>
+            <nav aria-label="Links do rodapé">
+                <h2>Navegação</h2>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre nós</a></li>
+                    <li><a href="personagens.html">Personagens</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="pacotes.html">Pacotes</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <section>
+                <h2>Contato</h2>
+                <address>
+                    <ul>
+                        <li>Curitiba - PR</li>
+                        <li><a href="mailto:contato@imperiodospersonagens.com.br">contato@imperiodospersonagens.com.br</a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=5541984980870&amp;text=Ol%C3%A1%2C%20vim%20pelo%20site%21" target="_blank" rel="noopener">(41) 9 8468-4930</a></li>
+                        <li>Seg a dom, das 10h às 19h</li>
+                    </ul>
+                </address>
+                <ul class="redes">
+                    <li><a href="https://www.facebook.com/profile.php?id=61561516843512" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/imperiodospersonagens" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="https://www.tiktok.com/@imperiodospersonagens" target="_blank" rel="noopener">TikTok</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="container-puro rodape-base">
+            <p>&copy; <span id="ano">2026</span> Império dos Personagens. Projeto acadêmico de Desenvolvimento Front-end para Web, Universidade Positivo.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/galeria.js"></script>
+</body>
+</html>

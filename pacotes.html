@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tabela de pacotes e simulador de orçamento.">
+    <title>Pacotes e simulador | Império dos Personagens</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #pacote-destaque {
+            background-color: #FFF6DF;
+            font-weight: 600;
+        }
+
+        .selo-popular {
+            display: inline-block;
+            margin-left: 0.5rem;
+            padding: 0.1rem 0.6rem;
+            border-radius: 999px;
+            background-color: var(--amarelo);
+            color: var(--azul-noite);
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+    <a class="pular-link" href="#conteudo">Pular para o conteúdo</a>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-imperio" data-bs-theme="dark" aria-label="Menu principal">
+            <div class="container">
+                <a class="navbar-brand marca" href="index.html">
+                    <img src="img/logo.png" alt="" width="56" height="56">
+                    Império dos Personagens
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu-principal">
+                    <ul class="navbar-nav ms-auto align-items-xl-center">
+                        <li class="nav-item"><a class="nav-link link-menu" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link link-menu" href="sobre.html">Sobre nós</a></li>
+                        <li class="nav-item"><a class="nav-link link-menu" href="personagens.html">Personagens</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link link-menu dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Serviços</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item link-submenu" href="animacao-de-festas.html">Animação de festas</a></li>
+                                <li><a class="dropdown-item link-submenu" href="danca-com-os-personagens.html">Dança com os personagens</a></li>
+                                <li><a class="dropdown-item link-submenu" href="hora-da-leitura.html">Hora da leitura</a></li>
+                                <li><a class="dropdown-item link-submenu" href="brincadeiras.html">Brincadeiras</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link link-menu" href="galeria.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link link-menu" href="pacotes.html">Pacotes</a></li>
+                        <li class="nav-item"><a class="nav-link link-menu" href="contato.html">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link link-menu" href="https://www.instagram.com/imperiodospersonagens" target="_blank" rel="noopener">Instagram</a></li>
+                        <li class="nav-item ms-xl-2 mt-2 mt-xl-0"><a class="btn btn-real" href="https://api.whatsapp.com/send/?phone=5541984980870&amp;text=Ol%C3%A1%2C%20vim%20pelo%20site%21" target="_blank" rel="noopener">Orçar no WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="conteudo">
+        <section class="pagina-topo">
+            <div class="container">
+                <h1>Pacotes</h1>
+                <p>Compare os pacotes e simule o valor da sua festa com personagens e horas extras.</p>
+            </div>
+        </section>
+
+        <section class="secao" aria-labelledby="titulo-tabela">
+            <div class="container">
+                <h2 id="titulo-tabela">Compare os pacotes</h2>
+                <div class="table-responsive mt-3">
+                    <table class="table table-hover align-middle tabela-pacotes">
+                        <caption>Valores de referência para festas em Curitiba.</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Pacote</th>
+                                <th scope="col">Personagens</th>
+                                <th scope="col">Duração</th>
+                                <th scope="col">Ideal para</th>
+                                <th scope="col">Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Encanto</th>
+                                <td>1</td>
+                                <td>45 min</td>
+                                <td>Festas em casa</td>
+                                <td>R$ 390,00</td>
+                            </tr>
+                            <tr id="pacote-destaque">
+                                <th scope="row">Magia <span class="selo-popular">Mais pedido</span></th>
+                                <td>1</td>
+                                <td>1:15h</td>
+                                <td>Aniversários</td>
+                                <td>R$ 490,00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Reino Encantado</th>
+                                <td>3</td>
+                                <td>1:15h</td>
+                                <td>Eventos</td>
+                                <td>R$ 890,00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Império</th>
+                                <td>4</td>
+                                <td>1:15h</td>
+                                <td>Eventos corporativos</td>
+                                <td>R$ 1.290,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-clara" aria-labelledby="titulo-simulador">
+            <div class="container">
+                <h2 id="titulo-simulador">Simule seu orçamento</h2>
+                <p>O valor muda conforme você escolhe as opções.</p>
+                <div class="row g-4 mt-1">
+                    <div class="col-lg-6">
+                        <form id="form-simulador">
+                            <div class="mb-3">
+                                <label class="form-label" for="sim-pacote">Pacote</label>
+                                <select class="form-select" id="sim-pacote">
+                                    <option value="encanto">Encanto (1 personagem, 45 min)</option>
+                                    <option value="magia" selected>Magia (1 personagens, 1:15h)</option>
+                                    <option value="reino">Reino Encantado (3 personagens, 1:15h)</option>
+                                    <option value="imperio">Império (4 personagens, 1:15h)</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="sim-personagens">Personagens extras (R$ 250,00 cada)</label>
+                                <input class="form-control" type="number" id="sim-personagens" min="0" max="5" value="0">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="sim-horas">Horas extras (R$ 180,00 cada)</label>
+                                <input class="form-control" type="number" id="sim-horas" min="0" max="3" value="0">
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="sim-fora">
+                                <label class="form-check-label" for="sim-fora">Evento fora de Curitiba, na região metropolitana (R$ 60,00)</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="resultado-simulacao" aria-live="polite">
+                            <h3>Seu orçamento estimado</h3>
+                            <ul id="sim-detalhes"></ul>
+                            <p class="valor-total" id="sim-total">R$ 0,00</p>
+                            <a class="btn btn-real" id="sim-pedir" href="contato.html">Pedir este orçamento</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container-puro rodape-grade">
+            <section>
+                <a class="marca" href="index.html">
+                    <img src="img/logo.png" alt="" width="56" height="56">
+                    Império dos Personagens
+                </a>
+                <p>Personagens vivos para festas infantis, escolares e corporativas em Curitiba e região metropolitana.</p>
+            </section>
+            <nav aria-label="Links do rodapé">
+                <h2>Navegação</h2>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre nós</a></li>
+                    <li><a href="personagens.html">Personagens</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="pacotes.html">Pacotes</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <section>
+                <h2>Contato</h2>
+                <address>
+                    <ul>
+                        <li>Curitiba - PR</li>
+                        <li><a href="mailto:contato@imperiodospersonagens.com.br">contato@imperiodospersonagens.com.br</a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=5541984980870&amp;text=Ol%C3%A1%2C%20vim%20pelo%20site%21" target="_blank" rel="noopener">(41) 9 8468-4930</a></li>
+                        <li>Seg a dom, das 10h às 19h</li>
+                    </ul>
+                </address>
+                <ul class="redes">
+                    <li><a href="https://www.facebook.com/profile.php?id=61561516843512" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/imperiodospersonagens" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="https://www.tiktok.com/@imperiodospersonagens" target="_blank" rel="noopener">TikTok</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="container-puro rodape-base">
+            <p>&copy; <span id="ano">2026</span> Império dos Personagens. Projeto acadêmico de Desenvolvimento Front-end para Web, Universidade Positivo.</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/pacotes.js"></script>
+</body>
+</html>
